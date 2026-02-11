@@ -1,5 +1,10 @@
 #  Privacy Preserving Disease Prediction System
 
+##  Live Demo
+
+ **[Click here to visit the website](https://privacy-preserving-disease-prediction-system-i7ztlkqpc.vercel.app)**
+
+
 A full-stack microservices based web application that predicts heart disease risk while preserving user data privacy using:
 
 - Fully Homomorphic Encryption (CKKS)
@@ -8,11 +13,6 @@ A full-stack microservices based web application that predicts heart disease ris
 - Secure ML inference
 
 The system separates **UI, Backend API, and ML computation** into independent services for scalability and security.
-
-
-##  Live Demo
-
- **[Click here to visit the website](https://privacy-preserving-disease-prediction-system-i7ztlkqpc.vercel.app)**
 
 ---
 
