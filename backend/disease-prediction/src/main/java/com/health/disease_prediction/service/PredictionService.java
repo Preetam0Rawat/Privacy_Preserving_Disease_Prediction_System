@@ -1,6 +1,7 @@
 package com.health.disease_prediction.service;
 
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.client.RestTemplate;
 
@@ -8,9 +9,13 @@ import org.springframework.web.client.RestTemplate;
 public class PredictionService {
 
     private final RestTemplate restTemplate = new RestTemplate();
+    
+
+    @Value("${ml.url}")
+    private String mlUrl;
+
 
     public String predict(double[] input) {
-        String url = "http://localhost:8000/predict";
-        return restTemplate.postForObject(url, input, String.class);
+        return restTemplate.postForObject(mlUrl, input, String.class);
     }
 }

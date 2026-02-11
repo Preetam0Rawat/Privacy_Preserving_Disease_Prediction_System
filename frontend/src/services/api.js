@@ -8,6 +8,6 @@ const API = axios.create({
 });
 
 export const predictHeart = async (data) => {
-  const res = await API.post("/heart/predict", data);
+  const res = await API.post("api/heart/predict", data);
   return res.data;
 };
